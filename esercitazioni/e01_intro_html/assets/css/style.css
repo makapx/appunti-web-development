@@ -1,0 +1,177 @@
+/** PEACH COLOR PALETTE
+    #f6b1d0 - light pink
+    #f192bd - primary pink
+    #e63674 - dark pink
+    #56bcd2 - light blue
+    #f8d465 - yellow
+    light grey - #f2f2f2
+*/
+
+/** MARIO COLOR PALETTE 
+    #e52521 - red
+    #fbd000 - yellow
+    #049cd8 - blue
+    #43b047 - green
+**/
+
+/** LUIGI COLOR PALETTE
+    #45b245 - primary green
+    #40e54f - light green
+    #0044ff - primary blue
+    #3b5bf2 - light blue
+    #d8dd0b - lime
+**/
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** HEADER **/
+.navbar {
+  background-color: #049cd8;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #f8d465;
+}
+
+/* Card container */
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+/* Resizing singular page card on desktop */
+@media screen and (min-width: 600px) {
+  .container.is-single {
+    grid-template-columns: 600px;
+  }
+}
+
+/** Card **/
+.container .card {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+}
+
+.container .card img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .card .card-content {
+  padding: 2rem;
+}
+
+.container .card .card-content p {
+  margin-bottom: 2rem;
+}
+
+/** Search button **/
+.search-btn {
+  background-color: #049cd8;
+  border: none;
+  border-radius: 0.5rem;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.search-btn:hover {
+  background-color: #43b047;
+}
+
+.search-btn a {
+  color: #f2f2f2;
+}
+
+/** Helpers Color Palette **/
+.is-peach {
+  background-color: #f192bd;
+}
+
+.is-peach.search-btn:hover {
+  background-color: #e63674;
+}
+
+.is-luigi {
+  background-color: #45b245;
+}
+
+.is-luigi.search-btn:hover {
+  background-color: #40e54f;
+}
+
+.is-mario {
+  background-color: #e52521;
+}
+
+.is-mario.search-btn:hover {
+  background-color: #049cd8;
+}
+
+/** Overlay **/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    width: 100%;
+    opacity: 1;
+}
+
+.overlay .text {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    padding: 2rem;
+}
