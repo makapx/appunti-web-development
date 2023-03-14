@@ -6,6 +6,10 @@ Table of content
 - [L01: HTTP](https://github.com/makapx/appunti-web-development/blob/main/appunti/L01_HTTP.md)
 - [L02: Introduzione ad HTML](https://github.com/makapx/appunti-web-development/blob/main/appunti/L02_HTML.md)
     - [E01: Primo progetto HTML](https://github.com/makapx/appunti-web-development/tree/main/esercitazioni/e01_intro_html)
+- [L03: Form e tabelle](https://github.com/makapx/appunti-web-development/blob/main/appunti/L03_Form.md)
+    - [E02: Replica di una tabella](https://github.com/makapx/appunti-web-development/tree/main/esercitazioni/e02_table)
+    - [E03: Replica di un form (senza CSS)](https://github.com/makapx/appunti-web-development/tree/main/esercitazioni/e03_form)
+
 
 ## Developer guide
 
