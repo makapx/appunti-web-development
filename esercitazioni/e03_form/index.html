@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Web development - Exercise n.3</title>
+    </head>
+    <body>
+        <div>
+            <div class="form-header">
+                <p><b>Registrazione utente</b></p>
+            </div>
+
+            <form>
+                <table class="form">
+                    <!-- EMAIL AND PASSWORD -->
+                    <tr>
+                        <td colspan="3">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div>Email</div>
+                                        <input size="32" type="email" name="email" placeholder="Email" />
+                                    </td>
+                                    <td>
+                                        <div>Conferma indirizzo e-email</div>
+                                        <input size="32" type="email" name="email_confirm" placeholder="Email" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div>Password</div>
+                                        <input size="32" type="password" name="password" placeholder="Password" />
+                                    </td>
+                                    <td>
+                                        <div>Conferma Password</div>
+                                        <input size="32" type="password" name="password_confirm" placeholder="Password" />
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    <!--// EMAIL AND PASSWORD -->
+
+                    <!-- SEPARATOR -->
+                    <tr>
+                        <td colspan="3">
+                            <hr color="red">
+                        </td>
+                    </tr>
+                    <!--// SEPARATOR -->
+
+                    <!-- NAME SURNAME INFO -->
+                    <tr>
+                        <td>
+                            <div>Nome</div>
+                            <input type="text" name="name" placeholder="Nome" />
+                        </td>
+                        <td>
+                            <div>Secondo Nome</div>
+                            <input type="text" name="second_name" placeholder="Secondo nome" />
+                        </td>
+                        <td>
+                            <div>Cognome</div>
+                            <input type="text" name="surname" placeholder="Cognome" />
+                        </td>
+                    </tr>
+                    <!--// NAME SURNAME INFO -->
+
+                    <!-- GENDER AND ADDRESS -->
+                    <tr>
+                        <td>
+                            <div>Sesso</div>
+                            <select name="gender">
+                                <option value="male">Maschio</option>
+                                <option value="female">Femmina</option>
+                            </select>
+                        </td>
+                        <td colspan="2">
+                            <div>Città ed indirizzo</div>
+                            <input type="text" name="city"  placeholder="Città e Indirizzo" size="44"/>
+                        </td>
+                    </tr>
+                    <!--// GENDER AND ADDRESS -->
+
+                    <!-- SEPARATOR -->
+                    <tr>
+                        <td colspan="3">
+                            <hr color="red">
+                        </td>
+                    </tr>
+                    <!--// SEPARATOR -->
+
+                    <!-- INTERESTS AND OS -->
+                    <tr>
+                        <td colspan="3">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div>Interessi</div>
+                                        <table width="270" border="1">
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <input type="checkbox" name="interests" value="videogame" /> Videogame
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" name="interests" value="art" /> Arte
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" name="interests" value="photography" checked/> Fotografia
+                                                    </div>
+                                                    <div>
+                                                        <input type="checkbox" name="interests" value="alcool" /> Alcool
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <div>Sistema utilizzato</div>
+                                        <table width="270" border="1">
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <input type="radio" name="os" value="windows" /> Microsoft Windows
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="os" value="linux" /> Linux
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="os" value="apple" checked /> MacOS
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" name="os" value="dos" /> Microsoft DOS
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--// INTERESTS AND OS -->
+
+                     <!-- SEPARATOR -->
+                     <tr>
+                        <td colspan="3">
+                            <hr color="red">
+                        </td>
+                    </tr>
+                    <!--// SEPARATOR -->
+
+                    <!-- TERM AND CONDITIONS -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <center>
+                                <p> Accetti le condizioni?</p>
+                                <input type="checkbox" name="accept" value="yes" /> Accetto
+                            </center>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <!--// TERM AND CONDITIONS -->
+
+                    <!-- SUBMIT -->
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>
+                            <center>
+                                <button> Registrati </button>
+                            </center>
+                            
+                        </td>
+                    </tr>
+                    <!--// SUBMIT -->
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
