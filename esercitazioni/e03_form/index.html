@@ -8,7 +8,7 @@
     <body>
         <div>
             <div class="form-header">
-                <p><b>Registrazione utente</b></p>
+                <b>Registrazione utente</b>
             </div>
 
             <form>
@@ -74,13 +74,17 @@
                         <td>
                             <div>Sesso</div>
                             <select name="gender">
+                                <option value="undefined"></option>
                                 <option value="male">Maschio</option>
                                 <option value="female">Femmina</option>
+                                <option value="easter-egg" hidden>
+                                    Super Mario Galaxy More :D
+                                </option>
                             </select>
                         </td>
                         <td colspan="2">
                             <div>Città ed indirizzo</div>
-                            <input type="text" name="city"  placeholder="Città e Indirizzo" size="44"/>
+                            <input type="text" name="city" placeholder="Città e Indirizzo" size="45"/>
                         </td>
                     </tr>
                     <!--// GENDER AND ADDRESS -->
@@ -100,14 +104,14 @@
                                 <tr>
                                     <td>
                                         <div>Interessi</div>
-                                        <table width="270" border="1">
+                                        <table width="290" border="1">
                                             <tr>
                                                 <td>
                                                     <div>
-                                                        <input type="checkbox" name="interests" value="videogame" /> Videogame
+                                                        <input type="checkbox" name="interests" value="videogame" checked/> Videogame
                                                     </div>
                                                     <div>
-                                                        <input type="checkbox" name="interests" value="art" /> Arte
+                                                        <input type="checkbox" name="interests" value="art" checked/> Arte
                                                     </div>
                                                     <div>
                                                         <input type="checkbox" name="interests" value="photography" checked/> Fotografia
@@ -121,17 +125,17 @@
                                     </td>
                                     <td>
                                         <div>Sistema utilizzato</div>
-                                        <table width="270" border="1">
+                                        <table width="290" border="1">
                                             <tr>
                                                 <td>
                                                     <div>
                                                         <input type="radio" name="os" value="windows" /> Microsoft Windows
                                                     </div>
                                                     <div>
-                                                        <input type="radio" name="os" value="linux" /> Linux
+                                                        <input type="radio" name="os" value="linux" checked /> Linux
                                                     </div>
                                                     <div>
-                                                        <input type="radio" name="os" value="apple" checked /> MacOS
+                                                        <input type="radio" name="os" value="apple" /> MacOS
                                                     </div>
                                                     <div>
                                                         <input type="radio" name="os" value="dos" /> Microsoft DOS
@@ -156,25 +160,17 @@
 
                     <!-- TERM AND CONDITIONS -->
                     <tr>
-                        <td></td>
-                        <td>
-                            <center>
-                                <p> Accetti le condizioni?</p>
-                                <input type="checkbox" name="accept" value="yes" /> Accetto
-                            </center>
+                        <td colspan="3" align="center">
+                            <p> Accetti le condizioni?</p>
+                            <input type="checkbox" name="accept" value="yes" /> Accetto
                         </td>
-                        <td></td>
                     </tr>
                     <!--// TERM AND CONDITIONS -->
 
                     <!-- SUBMIT -->
                     <tr>
-                        <td colspan="2"></td>
-                        <td>
-                            <center>
-                                <button> Registrati </button>
-                            </center>
-                            
+                        <td colspan="3" align="right">
+                            <button> Registrati </button>
                         </td>
                     </tr>
                     <!--// SUBMIT -->
