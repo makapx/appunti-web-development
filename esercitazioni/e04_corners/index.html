@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Web development - Exercise n.4</title>
+    <style>
+
+        html, body, * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            border: 2px solid gray;
+            height: 80vh;
+            margin: 2rem;
+            position: relative;
+        }
+
+        .content::before {
+            content: url(./icon.png);
+            display: block;
+            color: red;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+        }
+
+        .content::after {
+            content: url(./icon.png);
+            display: block;
+            color: red;
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            transform: rotate(180deg);
+        }
+
+        .content .corner-top-right {
+            content: url(./icon.png);
+            display: block;
+            color: red;
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            transform: rotate(90deg);
+        }
+
+        .content .corner-bottom-left {
+            content: url(./icon.png);
+            display: block;
+            color: red;
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            transform: rotate(-90deg);
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="corner-top-right"></div>
+            <div class="corner-bottom-left"></div>
+        </div>
+    </body>
+</html>
