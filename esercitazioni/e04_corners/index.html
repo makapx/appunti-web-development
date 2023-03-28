@@ -18,40 +18,34 @@
             position: relative;
         }
 
-        .content::before {
+        .content::before,
+        .content::after,
+        .content .corner-top-right,
+        .content .corner-bottom-left {
             content: url(./icon.png);
             display: block;
             color: red;
             position: absolute;
+        }
+
+        .content::before {
             top: -30px;
             left: -30px;
         }
 
         .content::after {
-            content: url(./icon.png);
-            display: block;
-            color: red;
-            position: absolute;
             bottom: -30px;
             right: -30px;
             transform: rotate(180deg);
         }
 
         .content .corner-top-right {
-            content: url(./icon.png);
-            display: block;
-            color: red;
-            position: absolute;
             top: -30px;
             right: -30px;
             transform: rotate(90deg);
         }
 
         .content .corner-bottom-left {
-            content: url(./icon.png);
-            display: block;
-            color: red;
-            position: absolute;
             bottom: -30px;
             left: -30px;
             transform: rotate(-90deg);
