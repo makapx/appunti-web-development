@@ -1,0 +1,137 @@
+/* Reset */
+html, body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color variables */
+:root {
+    --grey-dark: #333;
+    --white-primary: #fff;
+    --purple-primary: #790964;
+    --purple-accent: #911ac7;
+    --green-primary: #33ad3f;
+}
+
+body {
+    /* Background */
+    background: #790964;
+
+    /* Linear gradient, compatible with all browsers */
+    background: -moz-linear-gradient(90deg, rgba(121,9,100,1) 0%, rgba(176,60,86,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(121,9,100,1) 0%, rgba(176,60,86,1) 100%);
+    background: linear-gradient(90deg, rgba(121,9,100,1) 0%, rgba(176,60,86,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#790964",endColorstr="#b03c56",GradientType=1);
+
+    /* Font */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+.system-toolbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    background: var(--grey-dark);
+    color: var(--white-primary);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.system-toolbar::before{
+    content: "Activities";
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+}
+
+.system-toolbar svg {
+    fill: var(--white-primary);
+    opacity: 0.5;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.2rem;
+}
+
+.system-toolbar svg:hover {
+    opacity: 1;
+}
+
+.content {
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+.shell {
+    background: var(--grey-dark);
+    opacity: 0.9;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    color: var(--white-primary);
+    padding-top: 0.6rem;
+    padding-left: 12rem;
+
+    width: 80vw;
+    height: 40vh;
+    
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+@media screen and (min-width: 720px){
+    .shell{
+        height: 50vh;
+        width: 50vw;
+    }
+}
+
+.wrapper{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.wrapper-toolbar{
+    background-color: var(--grey-dark);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 0.2rem;
+}
+
+.wrapper-toolbar::after{
+    content: "makapx@linux-shell";
+    color: var(--white-primary);
+    position: absolute;
+    left: 4rem;
+}
+
+.wrapper-toolbar svg {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--purple-primary);
+}
+
+.wrapper-toolbar svg:hover{
+    fill: var(--purple-accent)
+}
+
+.wrapper::before{
+    content: '[makapx@linux-shell ~]:$';
+    color: var(--green-primary);
+    font-weight: 700;
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
+    z-index: 99;
+}
