@@ -83,7 +83,8 @@ body {
 
     width: 80vw;
     height: 40vh;
-    
+    min-height: 10vh;
+
     max-width: 80vw;
     max-height: 80vh;
 }
