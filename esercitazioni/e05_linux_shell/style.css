@@ -135,3 +135,78 @@ body {
     left: 0.5rem;
     z-index: 99;
 }
+
+.dock{
+    position: absolute;
+    bottom: 0.5rem;
+    left: calc(50% - 16rem);
+    width: 32rem;
+    height: 4rem;
+    background: var(--grey-dark);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.dock svg{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    transition: transform .2s;
+}
+
+.dock svg.spotify{
+    fill: #1db954;
+}
+
+.dock svg.steam{
+    fill: #66c0f4
+}
+
+.dock svg.discord{
+    fill: #7289da;
+}
+
+.dock svg.chrome{
+    fill: #f44336;
+}
+
+.dock svg.telegram{
+    fill: #0088cc;
+}
+
+.dock svg.terminal{
+    fill: var(--white-primary);
+}
+
+.dock svg.vscode{
+    fill: #007acc;
+}
+
+.dock svg.storage {
+    fill: #ff9800;
+}
+
+.dock svg.trash {
+    fill: var(--white-primary);
+}
+
+.dock svg.pacman {
+    fill: #ff9800;
+}
+
+.dock svg.ghost {
+    fill: #66c0f4;
+}
+
+.dock svg:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 720px) {
+    .dock {
+        display: none;
+    }
+}
