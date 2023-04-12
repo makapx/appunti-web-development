@@ -13,6 +13,9 @@ Table of content
 - [L05: Selettori complessi](./appunti/L05_SelettoriComplessi.md)
 - [L06: Margin, padding, box-sizing e position](./appunti/L06_Position.md)
     - [E04: Box con angoli rossi (position absolute)](./esercitazioni/e04_corners/)
+- [L07: Unità di misura, float e clear](./appunti/L07_Unita_Float.md)
+    - [E05: Shell Linux](./esercitazioni/e05_linux_shell)
+
 
 
 ## Developer guide
