@@ -11,7 +11,6 @@ html, body, * {
     --white-primary: #fff;
     --purple-primary: #790964;
     --purple-accent: #911ac7;
-    --green-primary: #33ad3f;
 }
 
 body {
@@ -128,7 +127,7 @@ body {
 
 .wrapper::before{
     content: '[makapx@linux-shell ~]:$';
-    color: var(--green-primary);
+    color: var(--white-primary);
     font-weight: 700;
     position: absolute;
     top: 2rem;
