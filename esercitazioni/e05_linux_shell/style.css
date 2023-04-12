@@ -26,7 +26,7 @@ body {
     /* Font */
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
-    height: 100vh;
+    height: calc(100vh - 4rem);
 }
 
 .system-toolbar{
