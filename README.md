@@ -15,8 +15,7 @@ Table of content
     - [E04: Box con angoli rossi (position absolute)](./esercitazioni/e04_corners/)
 - [L07: Unità di misura, float e clear](./appunti/L07_Unita_Float.md)
     - [E05: Shell Linux](./esercitazioni/e05_linux_shell)
-
-
+- [L08: Background, z-index, overflow. Layout responsive e media query.](./appunti/L08_Background_Z-index_Overflow_Responsive.md)
 
 ## Developer guide
 
