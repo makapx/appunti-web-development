@@ -17,6 +17,7 @@ Table of content
     - [E05: Shell Linux](./esercitazioni/e05_linux_shell)
 - [L08: Background, z-index, overflow. Layout responsive e media query.](./appunti/L08_Background_Z-index_Overflow_Responsive.md)
 - [L09: Flexbox model](./appunti/L09_Flex.md)
+    - [E06: Flex menù](./esercitazioni/e06_flex_menu/)
 
 ## Developer guide
 
