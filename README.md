@@ -18,7 +18,7 @@ Table of content
 - [L08: Background, z-index, overflow. Layout responsive e media query.](./appunti/L08_Background_Z-index_Overflow_Responsive.md)
 - [L09: Flexbox model](./appunti/L09_Flex.md)
     - [E06: Flex menù](./esercitazioni/e06_flex_menu/)
-- [L10: Grid Model](./L10_Grid.md)
+- [L10: Grid Model](./appunti/L10_Grid.md)
 
 ## Developer guide
 
