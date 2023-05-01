@@ -19,6 +19,7 @@ Table of content
 - [L09: Flexbox model](./appunti/L09_Flex.md)
     - [E06: Flex menù](./esercitazioni/e06_flex_menu/)
 - [L10: Grid Model](./appunti/L10_Grid.md)
+    - [E07: Grid layout](./esercitazioni/e07_grid_layout/)
 
 ## Developer guide
 

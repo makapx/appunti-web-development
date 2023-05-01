@@ -1,0 +1,80 @@
+/* Reset rules */
+html, body, * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Color palette */
+:root {
+	--primary: #8adae3;
+	--primary-dark: #5e9aa6;
+	--primary-gray: #9b9b9b;
+}
+
+/* Helpers */
+.grid {
+	display: grid;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+/* Layout rules */
+.article-wrapper {
+	grid-template-areas:
+	"tooltip-top tooltip-top"
+	"article-side article-main"
+	"tooltip-bottom tooltip-bottom";
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 1rem;
+	gap: 2rem;
+}
+
+.article-side {
+	grid-area: article-side;
+	grid-column: 1 / span 1;
+	border-right: var(--primary-gray) 1px solid;
+	padding-right: 1rem;
+	/* Hide sidebar on mobile */
+	display: none;
+}
+
+.article-main {
+	grid-area: article-main;
+	/* Full-width article on mobile */
+	grid-column: 1 / span 4;
+}
+
+.tooltip-top {
+	grid-area: tooltip-top;
+}
+
+.tooltip-bottom {
+	grid-area: tooltip-bottom;
+}
+
+.tooltip-bottom,
+.tooltip-top {
+	grid-column: 1 / span 4;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: var(--primary);
+	border: var(--primary-dark) 2px solid;
+}
+
+@media screen and (min-width: 1020px) {
+	/* Show sidebar on desktop*/
+	.article-side {
+		display: block;
+	}
+
+	/* Resize article to fit in 2/3 */
+	.article-main{
+		grid-column: 2 / span 3;
+	}
+}
