@@ -20,6 +20,9 @@ Table of content
     - [E06: Flex menù](./esercitazioni/e06_flex_menu/)
 - [L10: Grid Model](./appunti/L10_Grid.md)
     - [E07: Grid layout](./esercitazioni/e07_grid_layout/)
+- [L11: Elementi di design](./appunti/L11_Design)
+- [L12: Introduzione a Javascript](./appunti/L12_JavascriptIntro.md)
+- [L13: Javascript. Array, funzioni, classi e oggetti.](./appunti/L13_Javascript_Array_Function_Object_Class.md)
 
 ## Developer guide
 
